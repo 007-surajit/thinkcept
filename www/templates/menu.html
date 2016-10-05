@@ -1,0 +1,49 @@
+﻿
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button class="no-text">
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <!-- <button id="fab" class="button button-positive button-fab button-fab-bottom-right">
+            <i class="icon ion-social-twitter"></i>
+        </button> -->
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-header-bar class="expanded">
+            <img src="img/Small-Rental-Icon.png" class="avatar motion spin fade">
+            <div class="menu-bottom">
+                Car Rental Prototype
+            </div>
+        </ion-header-bar>
+        <ion-content class="stable-bg has-expanded-header">
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/app/reserveCar">
+                    Reserve a Car
+                </ion-item>
+                 <ion-item nav-clear menu-close href="#/app/showBookingDetails">
+                    Show Booking Details
+                </ion-item>
+                <ion-item nav-clear menu-close href="#">
+                    History
+                </ion-item>
+                <ion-item nav-clear menu-close href="#">
+                    Road-side Assistance
+                </ion-item>
+                <ion-item nav-clear menu-close href="#">
+                    My Profile
+                </ion-item>
+                <ion-item nav-clear menu-close href="#">
+                    Logout
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
