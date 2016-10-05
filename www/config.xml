@@ -18,7 +18,7 @@
 	
 	<preference name="phonegap-version" value="cli-5.4.1" />
 
-    <platform name="ios" />
+    <platform name="android" />
 
     <!--
         If you do not want any permissions to be added to your app, add the
